@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NWViewController : UIViewController
+@interface NWViewController : UIViewController < NSURLConnectionDataDelegate >
 
+@property (strong, nonatomic) IBOutlet UITextField *emailTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+
+- (IBAction)loginButtonPressed:(UIButton *)sender;
 @end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0113FBDC185FAC130031CC4B /* NWWorkoutsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0113FBDB185FAC130031CC4B /* NWWorkoutsTableView.m */; };
+		0113FBE0185FC91B0031CC4B /* NWWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0113FBDF185FC91B0031CC4B /* NWWorkout.m */; };
+		0113FBE3185FD5420031CC4B /* NWWorkoutShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0113FBE2185FD5420031CC4B /* NWWorkoutShowViewController.m */; };
 		01F77D3D185F795B0007B8A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F77D3C185F795B0007B8A6 /* Foundation.framework */; };
 		01F77D3F185F795B0007B8A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F77D3E185F795B0007B8A6 /* CoreGraphics.framework */; };
 		01F77D41185F795B0007B8A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F77D40185F795B0007B8A6 /* UIKit.framework */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0113FBDA185FAC130031CC4B /* NWWorkoutsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWWorkoutsTableView.h; sourceTree = "<group>"; };
+		0113FBDB185FAC130031CC4B /* NWWorkoutsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWWorkoutsTableView.m; sourceTree = "<group>"; };
+		0113FBDE185FC91B0031CC4B /* NWWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWWorkout.h; sourceTree = "<group>"; };
+		0113FBDF185FC91B0031CC4B /* NWWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWWorkout.m; sourceTree = "<group>"; };
+		0113FBE1185FD5420031CC4B /* NWWorkoutShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWWorkoutShowViewController.h; sourceTree = "<group>"; };
+		0113FBE2185FD5420031CC4B /* NWWorkoutShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWWorkoutShowViewController.m; sourceTree = "<group>"; };
 		01F77D39185F795B0007B8A6 /* Box Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Box Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F77D3C185F795B0007B8A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01F77D3E185F795B0007B8A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0113FBDD185FC9060031CC4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0113FBDE185FC91B0031CC4B /* NWWorkout.h */,
+				0113FBDF185FC91B0031CC4B /* NWWorkout.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		01F77D30185F795B0007B8A6 = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +133,13 @@
 				01F77D4B185F795B0007B8A6 /* NWAppDelegate.h */,
 				01F77D4C185F795B0007B8A6 /* NWAppDelegate.m */,
 				01F77D4E185F795B0007B8A6 /* Main.storyboard */,
+				0113FBE1185FD5420031CC4B /* NWWorkoutShowViewController.h */,
+				0113FBE2185FD5420031CC4B /* NWWorkoutShowViewController.m */,
+				0113FBDA185FAC130031CC4B /* NWWorkoutsTableView.h */,
+				0113FBDB185FAC130031CC4B /* NWWorkoutsTableView.m */,
 				01F77D51185F795B0007B8A6 /* NWViewController.h */,
 				01F77D52185F795B0007B8A6 /* NWViewController.m */,
+				0113FBDD185FC9060031CC4B /* Models */,
 				01F77D54185F795B0007B8A6 /* Images.xcassets */,
 				01F77D43185F795B0007B8A6 /* Supporting Files */,
 			);
@@ -250,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0113FBE3185FD5420031CC4B /* NWWorkoutShowViewController.m in Sources */,
+				0113FBE0185FC91B0031CC4B /* NWWorkout.m in Sources */,
 				01F77D53185F795B0007B8A6 /* NWViewController.m in Sources */,
 				01F77D49185F795B0007B8A6 /* main.m in Sources */,
+				0113FBDC185FAC130031CC4B /* NWWorkoutsTableView.m in Sources */,
 				01F77D4D185F795B0007B8A6 /* NWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +487,7 @@
 				01F77D6D185F795B0007B8A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01F77D6E185F795B0007B8A6 /* Build configuration list for PBXNativeTarget "Box PlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +496,7 @@
 				01F77D70185F795B0007B8A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
